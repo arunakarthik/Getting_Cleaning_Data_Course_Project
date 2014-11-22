@@ -1,3 +1,12 @@
+Data Units
+----------
+-  The acceleration signal from the smartphone accelerometer for X, Y and Z axis are in standard gravity units 'g'. 
+
+- The body acceleration signal obtained by subtracting the gravity from the total acceleration. 
+
+- The angular velocity vector measured by the gyroscope are in radians/second. 
+
+
 Transformations
 ---------------
 
