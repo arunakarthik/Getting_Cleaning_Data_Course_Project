@@ -6,7 +6,7 @@ This repo contains script related to the course project and also instructions to
 Working details of run_analysis.R
 ----------------------------------
 
-At a high level, there are 2 main user defined functions in this script:
+At a high level, there are 3 main user defined functions in this script:
 
 - **getSourceData**
     
@@ -16,6 +16,10 @@ At a high level, there are 2 main user defined functions in this script:
     
     This function makes use of reshape2 package to prepare the required tidy dataset
 
+- **getProperColumnNames**
+
+    This function does string manipulation to generate proper column names
+    
 **Key things to look for**
 
 - Usage of Regular expression on the column names using **grep** to extract the indices of the columns we are interested in.
