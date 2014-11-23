@@ -9,8 +9,8 @@ requiredFeatures <- grep(".*mean\\(\\)|.*std\\(\\)", allFeatures$FeatureName)
 activityLabels <- read.table("activity_labels.txt", header=FALSE, as.is=TRUE, col.names=c("LabelId", "ActivityName"))
 
 #Since the structure of training and test data files are same, same code can be used to read 
-#the training and test data files. getSourceData function is written to achieve that. allFeatures and requiredFeatures are free variables
-#which are read only once in the calling environment (uses lexical scoping feature of R)
+#the training and test data files. getSourceData function is written to achieve that. allFeatures and requiredFeatures 
+#are free variables which are read only once in the calling environment (uses lexical scoping feature of R)
 getSourceData <- function(dataFilePath, labelsFilePath, subjectsFilePath)
 {
     #read the labels (this dataset has only one column - name it as LabelId)
