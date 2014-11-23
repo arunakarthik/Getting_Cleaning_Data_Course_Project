@@ -1,7 +1,7 @@
 #read the list of all features
 allFeatures <- read.table("features.txt", header=FALSE, as.is=TRUE, col.names=c("FeatureId", "FeatureName"))
 
-#We are only interested in measurement columns containing Mean and Standard deviation. Identify the indices of those columns
+#We are only interested in measurement columns containing Mean and Standard deviation. Create a logical vector identifying those columns
 requiredFeatures <- grep(".*mean\\(\\)|.*std\\(\\)", allFeatures$FeatureName)
 
 #read the activity label and name required for linking with the main data set

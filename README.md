@@ -22,7 +22,7 @@ At a high level, there are 3 main user defined functions in this script:
     
 **Key things to look for**
 
-- Usage of Regular expression on the column names using **grep** to extract the indices of the columns we are interested in.
+- Usage of Regular expression on the column names using **grep** to generate a logical vector of the columns we are interested in.
 - Usage of **rbind, cbind** functions to combine rows and columns of data frames
 - Usage of **merge** function to join data and the associated labels by using common column name LabelId
 - Data common to both test and training are read only once in the beginning of the script and used as **free variables** in the getSourceData function

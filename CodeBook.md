@@ -10,7 +10,7 @@ Data Units
 Transformations
 ---------------
 
-- After associating the feature names given in the features.txt to the training and test data frames, prepared a subset of the dataset by filtering out only the required columns using the column indices produced by **grep**.
+- After associating the feature names given in the features.txt to the training and test data frames, prepared a subset of the dataset by filtering out only the required columns using the logical vector produced by **grep**.
 
 - SubjectIds and LabelIds given in separate files were read and attached to the main dataset using **cbind** function
 
